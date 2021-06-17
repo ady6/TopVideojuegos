@@ -1,2 +1,2 @@
 # TopVideojuegos
-Página web grupal sobre videojuegos con chatbot , cookies y animaciones
+Página web grupal responsive sobre videojuegos con chatbot, cookies y animaciones
