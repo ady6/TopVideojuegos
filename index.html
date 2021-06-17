@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Mi web responsive">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Responsive con JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+	<script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf62f1b62fee002a811e91.js?platform=onboarding_modular"></script><script type="text/javascript" async="" src="https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf6214b62fee002a811e3a.js?platform=registration"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf62f1b62fee002a811e91.js?platform=onboarding_modular"></script><script type="text/javascript" async="" src="https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf6214b62fee002a811e3a.js?platform=registration"></script><script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf6214b62fee002a811e3a.js?platform=registration'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+      <script type="text/javascript">function () {
+        var ldk = document.createElement('script');
+        ldk.type = 'text/javascript';
+        ldk.async = true;
+        ldk.src = 'https://s.cliengo.com/weboptimizer/60bf6213b62fee002a811e37/60bf62f1b62fee002a811e91.js?platform=onboarding_modular';
+        var s = document.getElementsByTagName('script')[0];
+        </script>
+
+	<main>
+		<header><h1>WEB DE VIDEOJUEGOS</h1></header>
+		<nav id="menu1"><h2>Bienvenido a nuestra página web</h2></nav>
+		<div id="menu2">
+			<h3>Mejor juego 2020</h3>
+			<img src="imagenes/goty2020.jpg" id="imagen1">
+		</div>
+		<aside><h3>Mejor juego 2021</h3>
+		<img src="imagenes/goty2021.jpg" id="imagen1"></aside>
+		<section>
+			<center><table>
+				<tr>
+					<td>
+						<label>Selecciona un juego</label>
+						<select id="juegos" onchange="cargarFoto()">
+							<option value="lol.png">LoL</option>
+							<option value="fifa.jpg">Fifa</option>
+							<option value="gtav.jpg">GTA V</option>
+							<option value="amongus.jpg">Among Us</option>
+						</select><br>
+						<img id="imagen" src="imagenes/lol.png">
+					</td>
+					<td>
+						<label>¿A que vamos a jugar hoy?</label>
+						<button onclick="elegirJuego()">
+							Descubrelo
+						</button><br>
+						<img id="imagen2" src="imagenes/1.jpg">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Escribe un numero: </label>
+						<input type="number" id="numero"
+							oninput="calcularFactorial()">
+						<p id="factorial"></p>
+					</td>
+					<td>
+						<label>Escribe un numero: </label>
+						<input type="number" id="numero2"
+							oninput="EsPar()">
+						<p id="par"></p>
+					</td>
+				</tr>
+
+	</table></center>
+		</section>
+		<div id="cajacookies">
+		<p>
+		Este sitio web usa cookies, si permanece aquí acepta su uso.
+		Puede leer más sobre el uso de cookies en nuestra <a href="politica.html">política de privacidad</a><br><button onclick="aceptarCookies()" class="pull-right"><i class="fa fa-times"></i> Aceptar y cerrar este mensaje</button>
+		</p>
+		</div>
+		<footer>Trabajo Realizado por: Victor Ivan, Adaya, Marcos y Manu</footer>
+	</main>
+</body>
+</html>

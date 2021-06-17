@@ -1,0 +1,131 @@
+header{
+	grid-area: cabecera;
+}
+#menu1{
+	grid-area: menu1;
+}
+#menu2{
+	grid-area: menu2;
+}
+section{
+	grid-area: contenido;
+}
+aside{
+	grid-area: banner;
+}
+#social{
+	grid-area: social;
+}
+footer{
+	grid-area: pie;
+}
+#cajacookies{
+  grid-area: cookies;
+}
+main{
+	display: grid;
+	grid-template-areas:
+    'cabecera cabecera cabecera cabecera cabecera cabecera'
+    'menu1 menu1 menu1 menu1 menu1 menu1'
+    'menu2 contenido contenido contenido contenido banner'
+    'pie pie pie pie pie pie'
+    'cookies cookies cookies cookies cookies cookies';
+    grid-gap: 10px;
+  	background-color: #2196F3;
+  	padding: 10px;
+  	text-align: center;	
+}
+
+main > * {
+	background-color: aqua;
+  	padding: 10px;
+}
+
+@media screen and (max-width:1000px) {
+  main {
+  display: grid;
+  grid-template-areas:
+    'cabecera cabecera cabecera cabecera cabecera cabecera'
+    'menu1 menu1 menu1 menu1 menu1 menu1'
+    'menu2 menu2 menu2 menu2 menu2 menu2'
+    'contenido contenido contenido contenido contenido banner'
+    'pie pie pie pie pie pie'
+    'cookies cookies cookies cookies cookies cookies';
+  grid-gap: 7px;
+  padding: 7px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width:700px) {
+  main {
+  display: grid;
+  grid-template-areas:
+    'cabecera'
+    'menu1'
+    'menu2'
+    'contenido'
+    'banner'
+    'pie'
+    'cookies';
+  grid-gap: 5px;
+  padding: 5px;
+  text-align: center;
+}
+}
+table {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  border-collapse: collapse;
+  width: 75%;
+  padding: 10px;
+  text-align: center;
+}
+td, th {
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+}
+
+#imagen1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: fontstack;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Segoe UI"),local("Roboto"),local("Ubuntu");
+}
+
+h3, footer {
+  font-family: fontstack, sans-serif;
+}
+#cajacookies {
+  box-shadow: 0px 0px 5px 5px #808080;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+#cajacookies button {
+  color: black;
+}
